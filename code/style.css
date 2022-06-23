@@ -1,5 +1,11 @@
 @media only screen and (min-width: 768px){
 
+  * .shopbody{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
 }
 .indexbody{
   background-color:black;
@@ -8,6 +14,12 @@
 
 .homebody hr{
   width:900px;
+}
+
+.homeitems div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact{
@@ -190,7 +202,7 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 .homebody #anotherwolfe img{
   width: 70px;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-right: 110px;
   padding-top: 10px;
 }
@@ -255,14 +267,18 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 .homebody .navbar_items{
   display: flex;
-
-
 }
+
+.navbar_items .container:hover{
+
+  opacity: 0.45;
+}
+
 
 .homebody hr{
 
   padding-top: 0px;
-  width: 500px;
+  width: 520px;
 
 }
 
@@ -381,6 +397,39 @@ transform: rotate(45deg) translate(-8px, -8px);
   /* For desktop: */
 @media only screen and (min-width: 768px) {
 
+  .shopbody * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  .shopbody html {
+    font-size: 62.5%;
+  }
+
+  .shopbody body {
+    padding:4rem 8rem;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #ddd;
+    font-size: "sans-serif";
+    text-transform: capitalize;
+  }
+
+  .shopbody .menu {
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem 0;
+  }
+  .shopbody .menu a {
+    text-decoration: none;
+    background-color: lightsalmon;
+    padding: 1.5rem 2.5rem;
+    border-radius:.5rem;
+    box-shadow: 10px 10px 10px #707070;
+
+  }
+
   .logo img{
     left:500px;
     top: 200px;
@@ -398,7 +447,7 @@ transform: rotate(45deg) translate(-8px, -8px);
 
 
   .indexnav{
-    top:110px;
+    top:150px;
     left: 750px;
     padding-top: 30px;
     position: absolute;
@@ -476,7 +525,7 @@ transform: rotate(45deg) translate(-8px, -8px);
     padding-left: 400px;
     font-family: 'Archivo Black', sans-serif;
     font-family: 'Barlow Condensed', sans-serif;
-    text-align: center;
+    text-align: left;
 
   }
 
@@ -545,6 +594,7 @@ transform: rotate(45deg) translate(-8px, -8px);
   hr{
     margin-top: -90px;
   }
+
 
 
   .loaded .bodyitems::after {
